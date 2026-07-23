@@ -5,13 +5,10 @@
     <h1 class="text-4xl font-bold tracking-tight text-gray-900">Organiza Feature</h1>
     <p class="mt-4 text-lg text-gray-600">Sua página inicial pública.</p>
 
-    <div class="mt-8 flex justify-center gap-4">
-      <% if user_signed_in? %>
+    <% if user_signed_in? %>
+      <div class="mt-8 flex justify-center">
         <%= link_to "Acessar o manager", manager_path, class: "rounded-md bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-500" %>
-      <% else %>
-        <%= link_to "Entrar", new_user_session_path, class: "rounded-md bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-500" %>
-        <%= link_to "Criar conta", new_user_registration_path, class: "rounded-md border border-gray-300 bg-white px-4 py-2 font-semibold text-gray-900 hover:bg-gray-50" %>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </section>
 </main>
