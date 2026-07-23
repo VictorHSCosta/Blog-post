@@ -1,0 +1,14 @@
+<% content_for :title, "Manager | Organiza Feature" %>
+
+<main class="min-h-screen bg-gray-50 px-6 py-12">
+  <section class="mx-auto max-w-4xl rounded-lg bg-white p-8 shadow-sm">
+    <div class="flex items-center justify-between gap-4">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900">Manager</h1>
+        <p class="mt-2 text-gray-600">Olá, <%= current_user.email %>.</p>
+      </div>
+
+      <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "rounded-md bg-gray-900 px-4 py-2 font-semibold text-white hover:bg-gray-700" %>
+    </div>
+  </section>
+</main>

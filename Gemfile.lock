@@ -136,7 +136,6 @@ GEM
     factory_bot_rails (6.5.1)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
-    ffi (1.17.2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
     ffi (1.17.2-arm-linux-gnu)
@@ -157,8 +156,6 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
-    inertia_rails (3.11.0)
-      railties (>= 6)
     io-console (0.8.2)
     irb (1.16.0)
       pp (>= 0.6.0)
@@ -227,14 +224,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.0-x86_64-linux-musl)
       racc (~> 1.4)
-    oj (3.16.13)
-      bigdecimal (>= 3.0)
-      ostruct (>= 0.2)
     orm_adapter (0.5.0)
     ostruct (0.6.3)
-    panko_serializer (0.8.4)
-      activesupport
-      oj (> 3.11.0, < 4.0.0)
     parallel (1.27.0)
     parser (3.3.10.0)
       ast (~> 2.4.1)
@@ -461,10 +452,8 @@ DEPENDENCIES
   factory_bot_rails
   image_processing (~> 1.2)
   importmap-rails
-  inertia_rails (~> 3.11)
   jbuilder
   kamal
-  panko_serializer
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)

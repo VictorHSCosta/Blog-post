@@ -1,10 +1,10 @@
-# 🚀 Rails Template — Postgres + Inertia + RSpec + FactoryBot + pnpm + Vite
+# 🚀 Rails Template — Postgres + Hotwire + RSpec + FactoryBot + pnpm + Vite
 
 Um **template Rails moderno e completo**, configurado com tudo que você precisa pra começar um novo projeto rapidamente.
 
 > 💡 Inclui:
 > ✅ Ruby on Rails + PostgreSQL
-> ✅ Inertia.js + React + Vite
+> ✅ Turbo + Stimulus + Vite
 > ✅ RSpec + FactoryBot
 > ✅ RuboCop + pnpm + ESLint + Prettier
 > ✅ GitHub Actions CI/CD (RSpec, Rubocop, pnpm lint)
@@ -61,16 +61,17 @@ PG_PORT=5432
 
 ---
 
-### 🧩 Frontend (Vite + Inertia + React)
+### 🧩 Frontend (Turbo + Stimulus + Vite)
 
 Os arquivos do frontend ficam em:
 
 ```
+app/javascript/
+├── application.js
+└── controllers/
+
 app/frontend/
-├── entrypoints/inertia.js
-├── components/
-├── pages/
-└── styles/
+└── entrypoints/application.css
 ```
 
 Inicie o servidor Vite:
@@ -132,10 +133,10 @@ Ele roda automaticamente em cada push ou PR:
 app/
   ├── controllers/
   ├── frontend/
-  │   ├── entrypoints/inertia.js
-  │   ├── components/
-  │   ├── pages/
-  │   └── styles/
+  │   └── entrypoints/application.css
+  ├── javascript/
+  │   ├── application.js
+  │   └── controllers/
   ├── models/
   ├── views/
   └── ...
@@ -154,7 +155,7 @@ spec/
 
 Este é meu **template pessoal de Rails moderno** — já vem com tudo que costumo usar nos meus projetos:
 
-> Rails + Postgres + RSpec + FactoryBot + Rubocop + pnpm + ESLint + Inertia.js (React)
+> Rails + Postgres + RSpec + FactoryBot + Rubocop + pnpm + ESLint + Hotwire
 
 Pode usar à vontade pra criar seus próprios projetos, ajustar, forkar e melhorar.
 Sinta-se em casa 🧠💻
